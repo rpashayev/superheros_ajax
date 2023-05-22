@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <script src="{{  url_for('static', filename='js/script.js')}}" async></script>
+    <title>Superheros</title>
+</head>
+<body class="bg-danger">
+    <div class="container col-7">
+        <div class="d-flex flex-column align-items-center">
+            <form class="card-body bg-dark d-flex flex-column align-items-center" id="myForm" method="post">
+                <h2 class="card-title text-warning text-center">Search for the<span class="text-danger"> SUPERHERO</span></h2>
+                <input type="text" class="form-control" name="search" id="search">
+
+                <button type="submit" class="btn btn-danger mt-2">Search</button>
+            </form>
+        </div>
+        <div class="row d-flex justify-content-between" id="cards"></div>
+    </div>
+
+</body>
+</html>
